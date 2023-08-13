@@ -23,7 +23,6 @@ const minAvgTwoSlice = (A) => {
     }
     postfixTraversalArray.push(currentPostfix);
   }
-  // console.log(array3);
   // console.log("Index ==> ", prefixTraversalIndex, " ==> ", minPrefix);
   // console.log(postfixTraversalArray);
   // console.log(
@@ -38,10 +37,10 @@ const minAvgTwoSlice = (A) => {
 };
 
 //-------------------------------------------
-let array1 = [4, 1, 2, 5, 1, 5, 8];
-let array2 = [4, 2, 2, 5, 2, 1, 5];
-let array3 = [1, -6, -9, -8, -5, -10];
+let array1 = [4, 2, 2, 5, 1, 5, 8];
+// let array2 = [4, 2, 2, 5, 2, 1, 5];
+// let array3 = [1, -6, -9, -8, -5, -10];
 //-------------------------------------------
 console.log(minAvgTwoSlice(array1));
-console.log(minAvgTwoSlice(array2));
-console.log(minAvgTwoSlice(array3));
+// console.log(minAvgTwoSlice(array2));
+// console.log(minAvgTwoSlice(array3));
