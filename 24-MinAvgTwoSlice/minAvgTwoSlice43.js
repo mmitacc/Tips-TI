@@ -7,6 +7,7 @@ const minAvgTwoSlice = (A) => {
   for (let i = 1; i < n - 1; i++) {
     currentSum[i] = currentSum[i - 1] + A[i + 1];
     currentAverage = currentSum[i] / (i + 2);
+    console.log("FILA ", i, " ==> ", currentSum[i]);
     if (currentAverage < minIncremental) {
       minIncremental = currentAverage;
       index = i - 1;
@@ -15,6 +16,7 @@ const minAvgTwoSlice = (A) => {
     let newCurrentSum = currentSum[i];
     while (j < i) {
       newCurrentSum = newCurrentSum - A[j];
+      console.log("ROW ", j, " ==> ", newCurrentSum);
       currentAverage = newCurrentSum / (i + 1 - j);
       if (currentAverage < minIncremental) {
         minIncremental = currentAverage;

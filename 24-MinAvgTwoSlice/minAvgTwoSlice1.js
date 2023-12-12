@@ -1,3 +1,4 @@
+console.time("Performance"); //INICIO TIME
 /**WITHOUT PREFIX***/
 const minAvgTwoSlice = (A) => {
   let index = 0;
@@ -10,13 +11,15 @@ const minAvgTwoSlice = (A) => {
       arraySlice = promCurrent;
     }
   }
-  console.log(arraySlice);
+  // console.log(arraySlice);
   return index;
 };
+console.timeEnd("Performance"); //FIN TIME
 
 //-------------------------------------------
 let array1 = [4, 2, 2, 5, 1, 5, 8];
-console.log(minAvgTwoSlice(array1));
+// console.log(minAvgTwoSlice(array1));
+minAvgTwoSlice(array1);
 
 /**WITH PREFIX***
   
