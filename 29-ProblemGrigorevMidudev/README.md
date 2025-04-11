@@ -1,0 +1,1 @@
+Resolución de problema de una publicación en Linkedin por "Midudev". Se adjunta imagen.
